@@ -1,30 +1,10 @@
-"""
-RadioPlayerV2, Telegram Voice Chat Userbot
-Copyright (C) 2021  Asm Safone
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU Affero General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU Affero General Public License for more details.
-
-You should have received a copy of the GNU Affero General Public License
-along with this program.  If not, see <https://www.gnu.org/licenses/>
-"""
-
-
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram import Client, filters
 
 
 
-HOME_TEXT = "👋🏻 **Hi [{}](tg://user?id={})**,\n\nI'm **Radio Player Bot** \nI Can Play Radio/Stream Music In Channels & Groups 24x7 Nonstop. Made with ❤️ By @xxvasu!"
-HELP = """🏷️ **Need Help?** 🤔
-__(Join @VASUXD For Support)__
+HOME_TEXT = "👋🏻 **Hi [{}](tg://user?id={})**,\n\nI'M **✯𝟐𝟒×𝟕 ᴍᴜꜱɪᴄ✯ ꜱᴛʀᴇᴀᴍɪɴɢ ʙᴏᴛ!✯** \nI Can Play Radio/Stream ᴍᴜꜱɪᴄ In Channels & Groups 𝟐𝟒×𝟕 Nonstop. Made with ❤️ By @xxvasu!"
+HELP = """🏷️ **Bot Configuration & Commands** 🤔
 
 🏷️ **Common Commands**:
 \u2022 `/play` reply to an audio to play or queue it
@@ -57,11 +37,11 @@ __(Join @VASUXD For Support)__
 async def start(client, message):
     buttons = [
         [
-        InlineKeyboardButton('CHANNEL', url='https://t.me/vasuxd'),
-        InlineKeyboardButton('SUPPORT', url='https://t.me/hindi_chaating_india'),
+        InlineKeyboardButton('CHANNEL', url='https://t.me/VASUXD'),
+        InlineKeyboardButton('SUPPORT', url='https://t.me/xxvasu'),
     ],
     [
-        InlineKeyboardButton('MORE BOTS', url='https://t.me/vasuxd'),
+        InlineKeyboardButton('MORE BOTS', url='https://t.me/VASUXD'),
         InlineKeyboardButton('SOURCE CODE', url='https://github.com/VasuChaubey'),
     ],
     [
