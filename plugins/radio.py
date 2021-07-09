@@ -29,7 +29,7 @@ async def radio(client, message: Message):
         await message.reply_text(f"{emoji.ROBOT} **Please Stop Existing Radio Stream By /stopradio Command!**")
         return
     await mp.start_radio()
-    await message.reply_text(f"{emoji.CHECK_MARK_BUTTON} **Radio Stream Started :** \n<code>{STREAM_URL}</code>")
+    await message.reply_text(f"{emoji.CHECK_MARK_BUTTON} **Radio Stream Started**")
 
 @Client.on_message(filters.command("stopradio") & filters.user(ADMINS))
 async def stop(_, message: Message):
