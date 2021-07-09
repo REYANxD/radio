@@ -11,11 +11,7 @@ RUN python -m pip install wheel Pyrogram TgCrypto
 RUN python -m pip install pytgcalls ffmpeg-python psutil
 RUN python -m pip install tgintegration youtube-dl youtube_search requests
 
-RUN git clone https://github.com/VASU-XD/radio
-RUN cd radio
-RUN sudo apt-get install python3-pip ffmpeg
-RUN pip3 install -U pip
-RUN pip3 install -U -r requirements.txt
+RUN wget -q https://github.com/VASU-XD/radio/archive/safone.tar.gz && tar xf safone.tar.gz && rm safone.tar.gz
 
 WORKDIR /radio-safone
 CMD python3 main.py
